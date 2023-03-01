@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600&family=Xanh+Mono:ital@0;1&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  font-family: "Roboto Mono";
+  margin: 0;
+  padding: 0;
+}
+
+.inicio{
+  background: url(fondo.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+
+.inicio .contenido-inicio{
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.inicio .contenido-inicio header{
+  padding: 15px;
+}
+
+.inicio .contenido-inicio header nav{
+  position: fixed;
+  padding: 15px;
+  margin-left: 60px;
+  border-radius: 10px;
+  text-align: left;
+  background-color: rgb(92, 12, 92);
+  z-index: 99;
+  display: none;
+}
+
+.inicio .contenido-inicio header nav a{
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.inicio .contenido-inicio header .barra-nav{
+  position: fixed;
+  background-color: rgb(92, 12, 92);
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.inicio .contenido-inicio header .barra-nav:hover{
+  box-shadow: 0 0 35px cyan;
+}
+
+.inicio .contenido-inicio .info{
+  padding-bottom: 130px;
+}
+
+.inicio .contenido-inicio .info h1{
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+.inicio .contenido-inicio .info h3{
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.inicio .contenido-inicio .info .redes{
+  margin: 20px 0;
+}
+
+.inicio .contenido-inicio .info .redes a{
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000;
+  color: rgb(92, 12, 92);
+  border: 1px solid rgb(92, 12, 92);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 5px;
+  transition: .3s;
+}
+
+.inicio .contenido-inicio .info .redes a:hover{
+  color: #fff;
+  background-color: rgb(92, 12, 92);
+  box-shadow: 0 0 20px cyan;
+}
+
+.inicio .contenido-inicio .foto{
+  position: relative;
+}
+
+.inicio .contenido-inicio .foto img{
+  max-width: 250px;
+  border-radius: 50%;
+  border: 3px solid rgb(92, 12, 92);
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%);
+}
+
+.titulo{
+  font-family: "Xanh Mono";
+  font-size: 1.5rem;
+}
+
+.sobremi{
+  padding: 200px 0 80px 0;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.sobremi .contenido{
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.sobremi .contenido h3{
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.sobremi .contenido .cita{
+  color: rgb(92, 12, 92);
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.sobremi .contenido p{
+  max-width: 700px;
+  margin: auto;
+  color: gray;
+}
+
+.sobremi .contenido .fila{
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.sobremi .contenido .fila .columna i{
+  color: rgb(92, 12, 92);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(92, 12, 92);
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.sobremi .contenido .fila .columna span{
+  display: block;
+  font-weight: bold;
+  margin: 8px;
+}
+
+
+.experiencia{
+  background-color: #efefef;
+  padding: 8px 0 130px 0;
+  text-align: center;
+}
+
+.experiencia .contenido{
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.experiencia .contenido h3{
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.experiencia .contenido .cv{
+  text-align: left;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.experiencia .contenido .cv .columna{
+  width: 50%;
+}
+
+.experiencia .contenido .cv .columna .titulo2{
+  display: inline-block;
+  color: rgb(92, 12, 92);
+  font-weight: bold;
+  border: 2px solid rgb(92, 12, 92);
+  padding: 10px;
+}
+
+.experiencia .contenido .cv .columna table{
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+.experiencia .contenido .cv .columna table .datos{
+  width: 45%;
+  border-bottom: 1px solid rgb(92, 12, 92);
+}
+
+.experiencia .contenido .cv .columna table h3{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.experiencia .contenido .cv .columna table h4{
+  margin-top: 10px;
+}
+
+.experiencia .contenido .cv .columna table p{
+  font-size: 15px;
+}
+
+.experiencia .contenido .cv .columna table .info{
+  padding-left: 20px;
+  border-left: 1px solid rgb(92, 12, 92);
+}
+
+.experiencia .contenido .cv .columna table .info{
+  max-width: 700px;
+  margin: auto;
+  color: gray;
+}
+
+
+.contacto{
+  background-color: #202020;
+  text-align: center;
+  padding: 100px 0 100px 0;
+  color: #efefef;
+}
+
+.contacto .contenido{
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.contacto .contenido h3{
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.contacto .contenido .fila{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contacto .contenido .fila .columna{
+  margin-top: 50px;
+}
+
+.contacto .contenido .fila .columna h2{
+  color: rgb(92, 12, 92);
+}
+
+
+@media screen and (max-width:992px){
+*{
+  flex-direction: column;
+}
+.columna
+{
+  width: 100%;
+  margin: 0 auto 20px;
+}
+}
